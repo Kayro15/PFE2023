@@ -1,0 +1,9 @@
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100h;
+  }
+  .react-pdf__Page__canvas {
+    outline: none;
+  }
