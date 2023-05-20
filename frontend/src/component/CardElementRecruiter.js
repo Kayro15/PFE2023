@@ -55,7 +55,7 @@ const CardElementRecruiter = ({ jobTitle, description, tag, location, company,id
             </CardActions>
             <Box sx={{ display: "flex", justifyContent: "space-between", width: "170px" }}>
                     <Button variant="contained"><Link style={{ color: "white", textDecoration: "none" }} to={`/admin/edit/job/${id}`}>Modifier</Link></ Button>
-                    < Button  variant="contained"  color="error" onClick={(e)=>deleteJoById(e,id)}>Delete</ Button>
+                    < Button  variant="contained"  color="error" onClick={(e)=>deleteJoById(e,id)}>Supprimer</ Button>
                 </Box>
         </Card>
     );

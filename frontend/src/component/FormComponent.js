@@ -73,11 +73,12 @@ const Add = () => {
     <>
     
     <Grid item>
-         <center> <Typography variant="h2">Add User</Typography></center>
+      
+         <center> <Typography variant="h2" style={{ fontStyle: 'italic',color:'white' }} >Ajouter un utilisateur</Typography></center>
         </Grid>
       <Box
         sx={{
-          height: "91vh",
+          height: "70vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -216,7 +217,7 @@ const Add = () => {
               }
             />
             <FormControl>
-              <FormLabel id="genre">Gender</FormLabel>
+              <FormLabel id="genre">Sexe</FormLabel>
               <RadioGroup
                 row
                 aria-labelledby="genre"
@@ -226,16 +227,17 @@ const Add = () => {
                   formik.setFieldValue("genre", e.target.value);
                 }}
               >
+                 <FormControlLabel
+                  value="male"
+                  control={<Radio />}
+                  label="Homme"
+                />
                 <FormControlLabel
                   value="female"
                   control={<Radio />}
-                  label="Female"
+                  label="Femme"
                 />
-                <FormControlLabel
-                  value="male"
-                  control={<Radio />}
-                  label="Male"
-                />
+               
               </RadioGroup>
             </FormControl>
             <FormControl sx={{ m: 1, minWidth: 80 }}>
@@ -256,7 +258,7 @@ const Add = () => {
             </FormControl>
 
             <Button fullWidth variant="contained" type="submit">
-              ADD
+              Ajouter
             </Button>
           </Box>
         </Box>

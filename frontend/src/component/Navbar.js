@@ -149,7 +149,7 @@ const Navbar = () => {
                         <Button
                             onClick={handleCloseNavMenu}
                             sx={{ my: 2, color: 'white', display: 'block' }}>
-                            <Link to="/test" style={{ color: 'white', textDecoration: "none" }}>
+                            <Link to="/" style={{ color: 'white', textDecoration: "none" }}>
                             Offres d'emploi
                             </Link>
                         </Button>

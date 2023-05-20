@@ -163,7 +163,7 @@ console.log(candidats)
             color="error"
             style={{ marginLeft:"10px"}}
           >
-            Delete
+            Supprimer
           </Button>
         </Box>
       ),

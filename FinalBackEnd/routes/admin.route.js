@@ -46,7 +46,7 @@ Router.delete("/candidat/:idUser/jobid/:Job_id", authMiddleware, adminroleMiddle
 Router.get("/Can/Candidats", authMiddleware, adminroleMiddleware, getAllCandidats);
 Router.get("/candidat/:idUser/", authMiddleware, adminroleMiddleware, getAllCandidatsbyApplier);
 Router.get("/candidat/:idUser/jobid/:Job_id", authMiddleware, adminroleMiddleware, getCandidatById);
-Router.post("/CreateForm",CreateForm);
+Router.post("/addForm",CreateForm);
 Router.get('/form/forms',getAllForms);
 Router.delete('/form/:id',deleteFormById)
 Router.get("/form/:id",getformbyid)

@@ -18,7 +18,7 @@ const dispatch=useDispatch()
     try {
       const formValues = JSON.stringify(data);
       await axios.post(`/api/users/form/${id}`, { Values: formValues });
-      toast.success("form created successfully")
+      toast.success("CV créé avec succès")
     } catch (err) {
       console.error(err);
    toast.error("tu as déja remplit ce CV")

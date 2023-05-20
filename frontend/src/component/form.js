@@ -280,7 +280,7 @@ export const CustomFormBuilder = () => {
       .post("http://localhost:8000/api/admin/addForm", form)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
-    toast.success("FORM created Successfully")
+    toast.success("Modèle créé avec succès")
   };
 
   return (

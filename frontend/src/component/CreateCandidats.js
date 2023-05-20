@@ -30,6 +30,7 @@ import axios from "axios";
 import { useState } from "react";
 import { CandidatAddAction } from "../redux/actions/CandidatsAction";
 
+
 const validationSchema = yup.object({
   fullName: yup
     .string("Entrez le prénom")
@@ -310,7 +311,7 @@ const {id}=useParams()
             <br></br>
 
             <Button variant="contained" component="label">
-              Upload Your Resume
+            Téléchargez votre CV
               <input
                 type="file"
                 onChange={(event) => {
@@ -323,7 +324,7 @@ const {id}=useParams()
 
             <br></br>
             <Button fullWidth variant="contained" type="submit">
-              Apply
+              Postuler
             </Button>
           </Box>
         </Box>

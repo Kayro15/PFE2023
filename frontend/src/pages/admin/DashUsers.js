@@ -100,18 +100,19 @@ const DashUsers = () => {
             width: "170px",
           }}
         >
-          <Button variant="contained">
+          <Button variant="contained" style={{ marginRight:"10px",width:"1000px"}}>
             <Link
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none" ,marginRight:"10px",marginLeft:"10px"}}
               to={`/admin/edit/user/${values.row.id}`}
             >
               Modifier
             </Link>
           </Button>
-          <Button
+          <Button  style={{width:"1000px"}}
             onClick={(e) => deleteUserById(e, values.row.id)}
             variant="contained"
             color="error"
+            
           >
             Supprimer
           </Button>

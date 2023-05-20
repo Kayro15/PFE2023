@@ -46,18 +46,18 @@ const DashForms = () => {
   const columns = [
     {
       field: "id",
-      headerName: "Form ID",
+      headerName: "ID_Modèle",
       width: 150,
       editable: true,
     },
     {
       field: "formName",
-      headerName: "Form Title",
+      headerName: "Titre de modèle",
       width: 150,
     },
     {
         field: "createdAt",
-        headerName: "Creation date",
+        headerName: "Date de création",
         width: 150,
         renderCell: (params) =>
           moment(params.row.createdAt).format("YYYY-MM-DD HH:MM:SS"),
@@ -79,7 +79,7 @@ const DashForms = () => {
             onClick={(e) => deleteJoById(e, values.row.id)}
             color="error"
           >
-            Delete
+            Supprimer
           </Button>
         </Box>
       ),

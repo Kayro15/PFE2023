@@ -72,24 +72,24 @@ console.log(candidats)
   const columns = [
     {
       field: "idUser",
-      headerName: "User ID",
+      headerName: "ID_User",
       width: 80,
       editable: true,
     },
     {
       field: "idJob",
-      headerName: "Job ID",
+      headerName: "ID_Offre_",
       width: 80,
     },
     {
       field: "email",
-      headerName: "email",
+      headerName: "Email",
       width: 100,
       editable: true,
     },
     {
       field: "fullName",
-      headerName: "fullName",
+      headerName: "Nom Complet",
       width: 100,
     },
     {
@@ -104,7 +104,7 @@ console.log(candidats)
     },
     {
       filed: "interviewDate",
-      headerName: "interviewDate",
+      headerName: "Date de l'entretien",
       width: 150,
       renderCell: (params) => {
           return moment(params.row.interviewDate).format("YYYY-MM-DD HH:MM:SS");
@@ -148,7 +148,7 @@ console.log(candidats)
               style={{ color: "white", textDecoration: "none" }}
               to={`/recruiter/candidat/pdf/${values.row.idUser}`}
             >
-              Resume PDF
+              CV PDF
             </Link>
           </Button>
           <Button
@@ -158,7 +158,7 @@ console.log(candidats)
             variant="contained"
             color="error"
           >
-            Delete
+            Supprimer
           </Button>
         </Box>
       ),

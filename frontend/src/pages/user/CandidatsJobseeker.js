@@ -69,18 +69,18 @@ export default function ComplexGrid() {
                         <Grid item xs container direction="column" spacing={2}>
                             <Grid item xs>
                                 <Typography gutterBottom variant="subtitle1" component="div">
-                                Company: {data.company}
+                                Entreprise: {data.company}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                  Title: {data.title}
+                                  Titre: {data.title}
                                 </Typography>
                                 <Typography variant="body2">
-                                  applicationStatus: {data.applicationStatus}
+                                  État de la candidature: {data.applicationStatus}
                                 </Typography>
                             </Grid>
                             <Grid item>
                                 <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                                    interviewDate: {data.interviewDate}
+                                    Date de l'entretien: {data.interviewDate}
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -95,7 +95,7 @@ export default function ComplexGrid() {
                     
                     < Button  variant="contained"  color="error"  onClick={(e) =>
               deletecandidatById(e,data.idJob)
-            } >Delete</ Button>
+            } >Supprimer</ Button>
                 </Box>
                 </Paper>
               

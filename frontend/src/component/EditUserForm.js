@@ -9,6 +9,8 @@ import {
   Radio,
   RadioGroup,
   Select,
+  Typography,
+  Grid,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Footer from "../component/Footer";
@@ -117,10 +119,13 @@ const Update = () => {
   }, [singleuser]);
 
   return (
-    <>
+  <>
+    <Grid item>
+    <center> <Typography variant="h2" style={{ fontStyle: 'italic',color:'white' }} >Modifier utilisateur</Typography></center>
+    </Grid>
       <Box
         sx={{
-          height: "91vh",
+          height: "65vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -275,8 +280,8 @@ const Update = () => {
           onChange={handleRoleChange}
           label="Role"
         >
-          <MenuItem value={"recruiter"}>Recruiter</MenuItem>
-          <MenuItem value={"job_seeker"}>Job_Seeker</MenuItem>
+          <MenuItem value={"recruiter"}>Recruteur</MenuItem>
+          <MenuItem value={"job_seeker"}>Chercheur d'emploi</MenuItem>
         </Select>
       </FormControl>
 

@@ -93,7 +93,7 @@ const SingleJob = () => {
                   <Box sx={{ flex: 1, p: 3 }}>
                     <Card sx={{ p: 2 ,marginTop:"50px"}}>
                       <Button sx={{ fontSize: "15px"}} variant="contained"  component={Link} to={`/candidats/add/${id}`}>
-                        Postulé 
+                        Postuler 
                       </Button>
                     </Card>
                   </Box>

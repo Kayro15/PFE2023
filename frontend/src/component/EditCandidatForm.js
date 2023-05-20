@@ -151,7 +151,7 @@ const {singleCandidat}=useSelector((state)=>state.singleCandidat)
               }
             />
             <Button fullWidth variant="contained" type="submit">
-              edit
+              Modifier
             </Button>
           </Box>
         </Box>
